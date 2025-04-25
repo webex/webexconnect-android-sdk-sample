@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_action_chat"
+            android:title="@string/title_messaging" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_action_alert"
+            android:title="@string/title_notifications" />
+    </group>
+
+    <group android:id="@+id/group_sdk_version">
+        <item
+            android:id="@+id/menu_sdk_version"
+            android:icon="@drawable/ic_action_info"
+            android:title="@string/title_sdk_version"
+            app:actionLayout="@layout/menu_sdk_version_action_view" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_action_sign_out"
+            android:title="@string/title_logout" />
+    </group>
+</menu>

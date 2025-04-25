@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">WebexConnectDemo</string>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_profile_image">Profile image</string>
+    <string name="nav_header_connection_status">Connection status</string>
+    <string name="nav_header_title">title</string>
+    <string name="nav_header_subtitle">subtitle</string>
+
+    <string name="title_messaging">Messaging</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_sdk_version">SDK version</string>
+    <string name="title_logout">Logout</string>
+
+    <string name="create_thread_button">Create</string>
+    <string name="create_thread_title">Create a thread</string>
+    <string name="create_thread_cancel">Cancel</string>
+
+    <string name="conn_status_connected">Connected</string>
+    <string name="conn_status_connecting">Reconnecting</string>
+    <string name="conn_status_disconnected">Disconnected</string>
+    <string name="thread_title_required">Thread title (required)</string>
+    <string name="start_a_conversation">Start a conversation.</string>
+    <string name="brand_logo">Brand logo</string>
+    <string name="login">Login</string>
+    <string name="user_id">User ID</string>
+    <string name="start_by_entering_your_user_id">Start by entering your user id.</string>
+    <string name="next">Next</string>
+    <string name="webex_connect">webex Connect</string>
+    <string name="webex">webex</string>
+    <string name="connect">Connect</string>
+    <string name="enter_user_id">Enter user id</string>
+    <string name="enter_thread_title">Enter thread title</string>
+    <string name="thread_title_input_field">Thread title input field</string>
+    <string name="thread_title">Thread Title</string>
+    <string name="type_a_message">Type a message…</string>
+    <string name="today">Today</string>
+    <string name="sender_you">You</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="sender_agent">Agent</string>
+    <string name="new_messages">New messages</string>
+
+    <string name="failed_to_logout">Failed to logout</string>
+    <string name="logout_successful">Logout successful</string>
+    <string name="webex_connect_not_registered">Webex Connect is not registered</string>
+    <string name="webex_connect_not_started">Webex Connect is not started</string>
+    <string name="please_enter_valid_user_id">Please enter a valid user id</string>
+    <string name="registering">Registering…</string>
+    <string name="error_code">ErrorCode: %1$s</string>
+    <string name="unregistering">Unregistering…</string>
+    <string name="unknown_deep_link">Unknown deep link: %1$s</string>
+    <string name="webex_connect_channel_name">Webex Connect</string>
+    <string name="webex_connect_channel_description">Webex Connect Notifications</string>
+    <string name="received_push_message">Received push message: %1$s</string>
+    <string name="unable_to_find_deep_link">Unable to find any deep link</string>
+    <string name="user_not_registered">User is not registered</string>
+    <string name="thread_id_empty">Thread ID is empty</string>
+    <string name="please_enter_valid_thread_name">Please enter a valid thread name</string>
+    <string name="creating_thread">Creating thread…</string>
+    <string name="failed_to_create_thread">Failed to create thread: %1$s</string>
+    <string name="failed_to_send_message">Failed to send message</string>
+
+</resources>

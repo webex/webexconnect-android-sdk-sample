@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:background="@drawable/bg_item_thread"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/initials"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_avatar"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:lineSpacingExtra="-1sp"
+        android:text="T1"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <androidx.emoji2.widget.EmojiTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/timestamp"
+        android:layout_toEndOf="@+id/initials"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:singleLine="true"
+        android:text="Thread 1"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="17sp" />
+
+    <androidx.emoji2.widget.EmojiTextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/initials"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:singleLine="true"
+        android:text="Secondary"
+        android:textColor="#B3FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="9:30pm"
+        android:textColor="#B3FFFFFF"
+        android:textSize="14sp" />
+
+</RelativeLayout>

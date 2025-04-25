@@ -1,0 +1,84 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.WebexConnectDemo" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorSecondaryVariant">?attr/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+        <item name="badgeStyle">@style/Widget.App.Badge</item>>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.WebexConnectDemo.Home" parent="Theme.WebexConnectDemo">
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+    </style>
+
+    <style name="Theme.WebexConnectDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WebexConnectDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavItemTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="NavItemTextAppearance.Bold" parent="NavItemTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavItemTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/FabMaterialThemeOverlay</item>
+        <item name="shapeAppearanceOverlay">@style/FabShapeAppearanceOverlay</item>
+    </style>
+
+    <style name="FabMaterialThemeOverlay">
+        <item name="colorSecondary">@color/fab_color_secondary</item>
+        <item name="colorOnSecondary">@color/fab_color_on_secondary</item>
+    </style>
+
+    <style name="FabShapeAppearanceOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.App.Badge" parent="Widget.MaterialComponents.Badge">
+        <item name="badgeHeight">16dp</item>
+        <item name="badgeTextAppearance">@style/BadgeTextAppearance</item>
+        <item name="horizontalOffset">4dp</item>
+        <item name="verticalOffset">4dp</item>
+        <item name="badgeTextColor">@color/badge_text_color</item>
+        <item name="backgroundColor">@color/badge_background_color</item>
+    </style>
+
+    <style name="BadgeTextAppearance">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorAccent">?attr/colorOnPrimary</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:headerBackground">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textColorSecondary">?attr/colorOnPrimary</item>
+    </style>
+</resources>

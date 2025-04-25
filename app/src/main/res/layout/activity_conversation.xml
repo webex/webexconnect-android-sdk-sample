@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ConversationActivity">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_create_thread_button"
+            android:contentDescription="@string/create_thread_cancel"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_back"
+            app:backgroundTint="@color/bg_create_thread_button_color" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="48dp"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="@string/thread_title"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="22sp" />
+
+        <include
+            android:id="@+id/header_conn_status_view"
+            layout="@layout/conn_status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|end" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/composer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:minHeight="56dp"
+        android:padding="4dp">
+
+        <androidx.emoji2.widget.EmojiEditText
+            android:id="@+id/message_composer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/bg_message_composer"
+            android:hint="@string/type_a_message"
+            android:imeOptions="actionSend"
+            android:inputType="text|textCapSentences|textMultiLine|textAutoComplete"
+            android:labelFor="@+id/text_input_hint"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="2sp"
+            android:maxLines="5"
+            android:minHeight="48dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="52dp"
+            android:scrollbars="vertical"
+            android:textColor="?attr/colorOnPrimary"
+            android:textCursorDrawable="@drawable/input_text_cursor"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/bg_create_thread_button"
+            android:contentDescription="@string/create_thread_cancel"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_send"
+            app:backgroundTint="@color/bg_create_thread_button_color" />
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/composer"
+        android:layout_below="@+id/header"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/new_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/composer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/bg_new_messages_button"
+        android:icon="@drawable/ic_action_arrow_down"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/new_messages"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="17sp"
+        app:iconPadding="8dp"
+        app:iconSize="20dp"
+        app:iconTint="?attr/colorOnPrimary" />
+
+</RelativeLayout>

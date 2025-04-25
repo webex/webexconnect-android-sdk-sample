@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".CreateThreadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_create_thread_button"
+            android:contentDescription="@string/create_thread_cancel"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_cancel"
+            app:backgroundTint="@color/bg_create_thread_button_color" />
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_create_thread_button"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:text="@string/create_thread_button"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="14sp"
+            app:backgroundTint="@color/bg_create_thread_button_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/create_button"
+            android:layout_toEndOf="@+id/cancel_button"
+            android:paddingBottom="2dp"
+            android:text="@string/create_thread_title"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/start_a_conversation"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_text_field"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_input_hint"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:importantForAccessibility="yes"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/thread_title_required"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="13sp"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.emoji2.widget.EmojiEditText
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@null"
+            android:hint="@string/enter_thread_title"
+            android:inputType="text"
+            android:labelFor="@+id/text_input_hint"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="2sp"
+            android:paddingTop="20dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textColorHint="@android:color/transparent"
+            android:textCursorDrawable="@drawable/input_text_cursor"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+</LinearLayout>

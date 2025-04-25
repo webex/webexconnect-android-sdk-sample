@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#1A1A1A</color>
+    <color name="color_primary_variant">#262626</color>
+    <color name="color_on_primary">#F2FFFFFF</color>
+    <color name="status_bar_color">#991A1A1A</color>
+
+    <color name="header_title">#F2FFFFFF</color>
+
+    <color name="profile_conn_status_connected">#509F7D</color>
+    <color name="profile_conn_status_connecting">#F9DC9D</color>
+    <color name="profile_conn_status_disconnected">#E3636C</color>
+
+    <color name="conn_status_connected">#9FEDD8</color>
+    <color name="conn_status_connecting">#FFDA94</color>
+    <color name="conn_status_disconnected">#FFD4DA</color>
+
+    <color name="bg_conn_status_connected">#0E2B20</color>
+    <color name="bg_conn_status_connecting">#36220C</color>
+    <color name="bg_conn_status_disconnected">#4F0E10</color>
+
+    <color name="bottom_nav_item_color_selected">#3492EB</color>
+    <color name="bottom_nav_item_color_unselected">#B2FFFFFF</color>
+
+    <color name="bg_create_thread_button_pressed">#66FFFFFF</color>
+
+    <color name="fab_color_secondary">#F2FFFFFF</color>
+    <color name="fab_color_on_secondary">#F2000000</color>
+
+    <color name="badge_text_color">#F2000000</color>
+    <color name="badge_background_color">#FFF55868</color>
+
+    <color name="bg_avatar_color">#545454</color>
+
+    <color name="item_thread_bg_color">#1CFFFFFF</color>
+    <color name="bg_new_messages_button">#1170CF</color>
+</resources>

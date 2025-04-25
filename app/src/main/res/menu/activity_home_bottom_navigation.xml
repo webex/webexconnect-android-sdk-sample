@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/ic_action_chat"
+        android:title="@string/title_messaging" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/ic_action_alert"
+        android:title="@string/title_notifications" />
+
+</menu>
